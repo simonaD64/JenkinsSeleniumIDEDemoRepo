@@ -19,7 +19,7 @@ pipeline{
         }
          stage("Restoring nuget packages") {
              steps {
-               bat 'dotned restore SeleniumIde.sln'
+               bat 'dotnet restore SeleniumIde.sln'
              }
         }
          stage("Build") {
