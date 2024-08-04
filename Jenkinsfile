@@ -2,21 +2,21 @@ pipeline{
     agent any
 
     stages {
-        stage("") {
+        stage("Checkout code") {
              steps {
                 git Branch: 'main', url: 'https://github.com/simonaD64/JenkinsSeleniumIDEDemoRepo'
              }
         }
-         stage("") {
+         stage("Set up .Net Core") {
             
         }
-         stage("") {
+         stage("Restore dependencies") {
             
         }
-         stage("") {
+         stage("Build") {
             
         }
-         stage("") {
+         stage("Run Tests") {
             
         }
     }
